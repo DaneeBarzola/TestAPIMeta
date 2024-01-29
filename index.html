@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <!--SDK de JavaScript de Facebook -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -44,7 +46,8 @@
 							<div class="content">
 								<p>Ingresa tus credenciales para acceder a la plataforma.</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Iniciar sesion</a></li>
+									<li><button class="button next scrolly" onclick="loginWithFacebook()">Iniciar sesion</button></li>
+                                    <li><button class="button next scrolly" onclick="getUserInfo()">Obtener información</button></li>
 								</ul>
 							</div>
 						</div>
@@ -198,6 +201,7 @@
 			</div>
 
 		<!-- Scripts -->
+            <script src="assets/js/app.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
